@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Visualization Final Project</title>
+
+
+		<script src="js/skel.min.js"></script>
+		<script src="js/init.js"></script>
+
+
+			<link rel="stylesheet" href="css/dc.css" />
+            <link rel="stylesheet" href="css/dashboard.css" />
+
+	</head>
+	<body>
+		<div id="wrapper">
+
+			<!-- Header -->
+			<div id="header">
+				<div class="container">
+
+
+					<div id="logo">
+						<h1><a href="#"><font color = "white">Visualization DashBoard</font></a></h1>
+					</div>
+
+
+
+				</div>
+			</div>
+
+
+            <div class = "tab">
+                <button class="tablinks" onclick = "location.href = 'parallel_coordinates.html';" style = "width:50%"><font color = "white"><b>PARALLEL COORDINATES</b></font></button>
+                <button class="tablinks" onclick = "location.href = 'matrix.html';" style = "width:50%"><font color = "white"><b>SCATTERPLOT MATRIX</b></font></button>
+            </div>
+
+			<div id="page" style="margin-top:-61px;">
+
+				<div class="container" style = "text-align:center;">
+
+
+                <div class = "row" style = "display:inline-block; ">
+                    <div class="2u chart-wrapper" id="total-projects">
+                            <div class="chart-title">  <strong> Number of Donations </strong> </div>
+                    </div>
+
+                        <div class="2u chart-wrapper" id="net-donations">
+                            <div class="chart-title">  <strong> Net Donation Amount($) </strong> </div>
+                        </div>
+
+
+
+                        <div><input id="button" type="button" value="RESET" onclick = "javascript:dc.filterAll();dc.redrawAll();" font color = "white" ></div>
+
+                    </div>
+
+                </div>
+
+
+                    </div>
+
+
+				</div>
+
+
+					<div class="row" style = "margin-top: -81px;">
+
+                    <div class="6u chart-wrapper" id="us-chart">
+                            <div class="chart-title">  <strong> <font color = "white"> Donation Amount per State ($)</font></strong> </div>
+                        </div>
+
+						<div class="6u chart-wrapper"  id="date-chart">
+							<div class="chart-title"> <strong><font color = "white"> Donation Timeline </font></strong></div>
+
+						</div>
+
+
+					</div>
+
+
+
+					<div class="row">
+
+                        <div class="4u chart-wrapper" id="resource-chart">
+                            <div class="chart-title">  <strong> <font color = "white">Donation Distribution among Resources</font></strong> </div>
+
+                        </div>
+
+						<div class="4u chart-wrapper"  id="grade-chart">
+							<div class="chart-title">  <strong><font color = "white"> Donation Count by Grade </font></strong> </div>
+						</div>
+
+						<div class="4u chart-wrapper" id="poverty-chart">
+							<div class="chart-title">  <strong> <font color = "white">Donation Count by Poverty Level </font></strong></div>
+
+						</div>
+
+					</div>
+
+
+				</div>
+			</div>
+
+
+		</div>
+
+<script src='js/crossfilter.js' type='text/javascript'></script>
+<script src='js/d3.js' type='text/javascript'></script>
+<script src='js/dc.js' type='text/javascript'></script>
+<script src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+<script src='js/queue.js' type='text/javascript'></script>
+<script src='js/Dashboard.js' type='text/javascript'></script>
+
+	</body>
+</html>
